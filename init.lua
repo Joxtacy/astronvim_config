@@ -128,6 +128,16 @@ local config = {
     packer = {
       compile_path = vim.fn.stdpath "data" .. "/packer_compiled.lua",
     },
+    ["neo-tree"] = {
+      window = {
+        position = "right",
+      },
+      filesystem = {
+        filtered_items = {
+          visible = true,
+        },
+      }
+    },
   },
 
   -- LuaSnip Options
