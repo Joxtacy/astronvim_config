@@ -96,6 +96,7 @@ local config = {
       --   end,
       -- },
       { "morhetz/gruvbox" },
+      { "~/PrivateProjects/playground/neovim-plugins/theme-sync"},
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
