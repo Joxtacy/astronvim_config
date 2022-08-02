@@ -18,7 +18,8 @@ local config = {
   },
 
   -- Set colorscheme
-  colorscheme = "default_theme",
+  -- colorscheme = "default_theme",
+  colorscheme = "gruvbox",
 
   -- Override highlight groups in any theme
   highlights = {
@@ -37,6 +38,7 @@ local config = {
   options = {
     opt = {
       relativenumber = true, -- sets vim.opt.relativenumber
+      background = "dark", -- sets the vim.opt.background to give light/dark colorscheme
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
@@ -93,6 +95,7 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
+      { "morhetz/gruvbox" },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
