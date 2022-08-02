@@ -222,6 +222,7 @@ local config = {
     n = {
       -- second key is the lefthand side of the map
       ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
+      ["<BS>"] = { "<Cmd>nohlsearch<cr>", desc = "No highlight" },
     },
     t = {
       -- setting a mapping to false will disable it
