@@ -52,6 +52,7 @@ local config = {
       relativenumber = true, -- sets vim.opt.relativenumber
       background = "dark", -- sets the vim.opt.background to give light/dark colorscheme
       mouse = "", -- Disable use of the mouse
+      wrap = true,
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
