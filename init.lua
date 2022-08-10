@@ -19,7 +19,7 @@ local config = {
 
   -- Set colorscheme
   -- colorscheme = "default_theme",
-  colorscheme = "gruvbox",
+  colorscheme = "tokyonight",
 
   -- Custom header for dashboard
   header = {
