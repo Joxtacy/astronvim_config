@@ -243,6 +243,7 @@ local config = {
       command = "source <afile> | PackerSync",
     })
 
+    require("user.autocmds.rustfmt-on-save")
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
