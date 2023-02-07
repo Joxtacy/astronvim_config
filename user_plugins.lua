@@ -87,4 +87,5 @@ return {
   -- dependency for leap.nvim to make . repeats work as intended --
   { "tpope/vim-repeat" },
   -- leap.nvim --
+  { "imsnif/kdl.vim" },
 }
