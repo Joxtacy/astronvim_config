@@ -19,6 +19,10 @@ return {
   --   end,
   -- },
 
+  -- Disabled plugins
+  ["declancm/cinnamon.nvim"] = { disable = true },
+  -- Disabled plugins end
+
   { "morhetz/gruvbox" },
   { "EdenEast/nightfox.nvim" },
   { "folke/tokyonight.nvim" },
