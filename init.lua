@@ -58,6 +58,12 @@ local config = {
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
+      markdown_fenced_languages = {
+        "ts=typescript",
+        "typescript",
+        "js=javascript",
+        "javascript"
+      },
     },
   },
 
