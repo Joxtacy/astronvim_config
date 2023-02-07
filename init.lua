@@ -133,6 +133,9 @@ local config = {
     treesitter = {
       ensure_installed = { "lua" },
     },
+    ["mason-lspconfig"] = {
+      ensure_installed = { "rust_analyzer" }, -- install rust_analyzer
+    },
     ["nvim-lsp-installer"] = {
       ensure_installed = { "sumneko_lua" },
     },
@@ -183,6 +186,8 @@ local config = {
 
   -- Extend LSP configuration
   lsp = {
+    -- More about this here. https://astronvim.github.io/Recipes/advanced_lsp#lsp-specific-plugins
+    skip_setup = { "rust_analyzer" }, -- skip lsp setup because rust-tools will do it itself
     -- enable servers that you already have installed without lsp-installer
     servers = {
       -- "pyright"

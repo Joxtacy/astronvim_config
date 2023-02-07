@@ -32,12 +32,21 @@ return {
     as = "rose-pine",
     tag = "v1.*",
   },
-  { "~/PrivateProjects/playground/neovim-plugins/theme-sync"},
+  { "~/PrivateProjects/playground/neovim-plugins/theme-sync" },
   {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
     config = function()
       require("todo-comments").setup({})
+    end,
+  },
+  {
+    "simrat39/rust-tools.nvim",
+    after = "mason-lspconfig.nvim", -- make sure to load after mason-lspconfig
+    config = function()
+      require("rust-tools").setup({
+        server = astronvim.lsp.server_settings "rust_analyzer", -- get the server settings and built in capabilities/on_attach
+      })
     end,
   },
 }
