@@ -23,13 +23,24 @@ return {
   ["declancm/cinnamon.nvim"] = { disable = true },
   -- Disabled plugins end
 
+  -- Begin Themes --
   { "morhetz/gruvbox" },
   { "EdenEast/nightfox.nvim" },
   { "folke/tokyonight.nvim" },
   {
-    "catppuccin/nvim",
-    as = "catppuccin",
-    run = ":CatppuccinCompile",
+    "Shatur/neovim-ayu",
+    config = function()
+      require("ayu").setup({
+        mirage = false,
+        overrides = function()
+          if vim.o.background == 'dark' then
+            return { NormalNC = { bg = '#0f151e', fg = '#808080' } }
+          else
+            return { NormalNC = { bg = '#f0f0f0', fg = '#808080' } }
+          end
+        end
+      })
+    end
   },
   {
     "rose-pine/neovim",
@@ -37,6 +48,7 @@ return {
     tag = "v1.*",
   },
   -- { "~/PrivateProjects/playground/neovim-plugins/theme-sync" },
+  -- End Themes --
   {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
