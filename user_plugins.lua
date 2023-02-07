@@ -36,7 +36,7 @@ return {
     as = "rose-pine",
     tag = "v1.*",
   },
-  { "~/PrivateProjects/playground/neovim-plugins/theme-sync" },
+  -- { "~/PrivateProjects/playground/neovim-plugins/theme-sync" },
   {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
