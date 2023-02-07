@@ -50,6 +50,12 @@ return {
   -- { "~/PrivateProjects/playground/neovim-plugins/theme-sync" },
   -- End Themes --
   {
+    "glacambre/firenvim",
+    run = function()
+      vim.fn["firenvim#install"](0)
+    end
+  },
+  {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
     config = function()
