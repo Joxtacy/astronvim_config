@@ -77,6 +77,9 @@ return {
       require("deno-nvim").setup({})
     end,
   },
+  {
+    "danilamihailov/beacon.nvim",
+  },
   -- leap.nvim --
   {
     "ggandor/leap.nvim",
