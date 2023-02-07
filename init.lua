@@ -256,6 +256,17 @@ local config = {
       command = "source <afile> | PackerSync",
     })
 
+    if vim.g.neovide then
+      require("user.neovide.init") -- load Neovide specific config
+
+      -- This does not work. Keymap is broken. And I can't call the function properly
+      -- vim.g.neovide_scale_factor = 1
+      -- vim.api.nvim_create_user_command("ChangeScaleFactor", function(delta)
+      -- vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
+      -- end, { desc = "Change the scale of Neovide" })
+      -- vim.api.nvim_set_keymap("n", "<C-=>", "ChangeScaleFactor(1.25)", {})
+    end
+
     require("user.autocmds.rustfmt-on-save")
     -- Set up custom filetypes
     -- vim.filetype.add {
