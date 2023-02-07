@@ -69,6 +69,12 @@ return {
       require("rust-tools").setup({
         server = astronvim.lsp.server_settings "rust_analyzer", -- get the server settings and built in capabilities/on_attach
       })
+    end
+  },
+  {
+    "sigmasd/deno-nvim",
+    config = function()
+      require("deno-nvim").setup({})
     end,
   },
 }
