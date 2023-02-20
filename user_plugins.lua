@@ -24,7 +24,15 @@ return {
   -- Disabled plugins end
 
   -- Begin Themes --
-  { "morhetz/gruvbox" },
+  -- { "morhetz/gruvbox" },
+  {
+    "ellisonleao/gruvbox.nvim",
+    config = function()
+      require("gruvbox").setup({
+        transparent_mode = true,
+      })
+    end
+  },
   { "EdenEast/nightfox.nvim" },
   { "folke/tokyonight.nvim" },
   {
